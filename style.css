@@ -1,0 +1,523 @@
+/*General Section*/
+body{
+    background-color: #f8edeb;
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;  
+}
+*{
+    padding: 0px; 
+    margin: 0px;
+    box-sizing: border-box; 
+}
+.box{
+    width: 100%;
+    height: 600px;
+}
+
+/*First Section*/
+.section-1{
+    position:relative;
+    color: #745249;
+}
+.cherry3_photo{
+    width: 800px;
+    position:absolute;
+    right: 0px;
+}
+.tittle1{
+    font-size: 100px;
+    padding-top: 200px;
+    left: 80px;
+    position:absolute;
+}
+.text1{
+    font-size: 40px;
+    padding-top: 330px;
+    left: 80px;
+    position:absolute;
+    opacity: 0.5;
+}
+
+/*Second Section*/
+.section-2{
+    height: 300vh; 
+    background-image: url(./imagens/sky1.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    box-shadow: inset 0 0 0 1000px rgba(116, 82, 73, 0.3);
+    color: white;  
+}
+.timeline-section a{
+  text-decoration: none;
+  color:#dee7eb;
+}
+.timeline-section a:hover{
+  color:#aec3cf;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.intro-text {
+  color: #ffffff;
+  padding: 32px 0;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.intro-text h1 {
+  margin-top: 50px;
+  font-size: 3.5rem;
+}
+
+.intro-text p{
+  margin-top: 35px;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  line-height: 1.6;
+}
+img {
+  width: 100%;
+}
+  /*Timeline*/
+.timeline-section {
+  width: 100%;
+  overflow: hidden;  
+}
+.timeline-section ul {
+  padding: 5rem 0; 
+}
+.timeline-section ul li {
+  list-style: none;
+  position: relative;
+  width: 5px; 
+  margin: 0 auto; 
+  padding-top: 5rem; 
+  background: rgb(174,195,207, 0.7);
+}
+.timeline-section ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: inherit; 
+}
+.timeline-section ul li div {
+  width: 40rem;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 0;
+  padding: 1.5rem;
+  background: rgba(255,255,255,.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.timeline-section ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.timeline-section ul li:nth-child(odd) div {
+  left: 45px;  
+}
+.timeline-section ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent rgb(174,195,207, 0.5) transparent transparent;
+}
+.timeline-section ul li:nth-child(even) div {
+  left: -680px;
+}
+.timeline-section ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent rgb(174,195,207, 0.5); 
+}
+time {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+.timeline-section ul li::after {
+  transition: all 0.5s ease-in-out;
+}  
+.timeline-section ul li.slide-in::after {
+  background: #ffffff;
+  border: 3px solid rgb(174,195,207, 0.5);
+}
+.timeline-section ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.timeline-section ul li:nth-child(odd) div {
+  transform: translateX(20rem);
+}
+.timeline-section ul li:nth-child(even) div {
+  transform: translateX(-20rem);
+}
+.timeline-section ul li.slide-in div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Thrid Section*/
+.section-3{ 
+    background-color: #f1dada;
+    width: 1335px;
+    height: 550px;
+    margin: 70px 50px 70px 50px;
+    border-radius: 5px;
+    position:relative;
+    color: #745249;
+} 
+.cherry1_photo{
+    width: 690px;
+    position:absolute;
+    opacity: 0.6;
+}
+.tittle3{
+    font-size: 65px;
+    padding-top: 130px;
+    right: 150px;
+    position:absolute;
+} 
+/* Tabs */
+.tab {
+    border: 1px solid #ccc;
+    background-color: rgb(174,195,207, 0.4);
+    position: absolute;
+    left: 58%;
+    top: 240px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  /*button*/
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 30px;
+    width: 20vmin;
+    color: #745249;
+    font-family: 'Playfair Display', serif;
+  }
+  .tab button:hover {
+    background-color: rgb(174,195,207, 0.8);
+  }
+  .tab button.active {
+    background-color: rgb(174,195,207, 0.8);
+  }
+  
+  /*content */
+  .tabcontent{
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    background-color: rgb(174,195,207, 0.8);
+    left: 775px;
+    top: 304px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+  .firstParagraph{
+    padding: 45px 146px 45px 146px;
+    font-size: 25px;
+  }
+  .secondParagraph{
+    padding: 45px 195.5px 45px 193px;
+    font-size: 25px;
+  }
+  .thirdParagraph{
+    padding: 10px 169px 10px 115px;
+    font-size: 25px;
+  }
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+/*Forth Section*/
+.section-4{
+    height: 80vh; 
+    background-image: url(./imagens/sky1.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    box-shadow: inset 0 0 0 1000px rgba(116, 82, 73, 0.3);
+    color: white;
+}
+.tittle4{
+    font-size: 65px;
+    padding: 100px 0px 0px 200px;
+    left: 250px;
+    position: absolute;
+}
+.text4{
+    font-size: 38px;
+    padding: 250px 250px 0px 250px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: justify;
+}
+
+/* Fifth Section*/
+.section-5{
+    height: 10vh; 
+    color: #745249;
+    opacity: 0.7;
+}
+.tittle5{
+    font-size: 40px;
+    margin: -10px 0 0 270px;
+    position:absolute;
+}
+.list3 li{
+    display: inline;
+    padding: 20px;
+}
+.list3 a {
+    color: #745249;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+.buttonSec{
+    background-color: white;
+    border-radius: 20px;
+}
+.list3 a:hover{
+    opacity: 0.5;
+}
+.list3{
+    margin: 50px 0px 0px 700px;
+}
+.mountain_photo{
+  filter: grayscale(70%);
+  opacity: 0.1;
+  width: 100%
+}
+
+/* Direction Dots */
+html {
+  scroll-behavior: smooth;
+}
+.nav {
+  --nav-gap: 15px;
+  padding: var(--nav-gap);
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-item {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: var(--nav-gap);
+}
+.nav-link:hover ~ .nav-label {
+  opacity: 1;
+}
+.nav-label {
+  color: rgb(174,195,207, 1);
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.nav-link {
+  background: rgb(174,195,207, 1);
+  border-radius: 50%;
+  height: var(--nav-gap);
+  margin-left: var(--nav-gap);
+  transition: transform 0.1s;
+  width: var(--nav-gap);
+}
+.nav-link-selected {
+  background: rgb(174,195,207, 1);
+  transform: scale(1.4);
+}
+
+
+@media (max-width: 640px) {
+    body{
+        background-color: #f8edeb;
+        font-family: 'Playfair Display', serif;
+        overflow-x: hidden;  
+    }
+    *{
+        padding: 0px; 
+        margin: 0px;
+        box-sizing: border-box; 
+    }
+    .box{
+        width: 100%;
+        height: 600px;
+    }
+    /*First Section*/
+    .cherry3_photo{
+        width: 650px;
+        position:absolute;
+        right: 0px;
+    }
+    .tittle1{
+        font-size: 80px;
+        padding-top: 250px;
+        left: 30px;
+        position:absolute;
+    }
+    .text1{
+        font-size: 24px;
+        padding-top: 450px;
+        left: 30px;
+    }
+    /*Second Section*/
+    .section-2{
+        height: 340vh; 
+    }
+    .container {
+      margin: 0 auto;
+      padding: 0 10px;
+      text-align: center;
+    }
+    .intro-text h1 {
+      margin-top: 40px;
+      font-size: 3rem;
+    }
+    .intro-text p{
+      margin-top: 20px;
+    }
+    .timeline-section ul li div {
+      width:140px; 
+      font-size: 1rem;
+      position: relative;
+      bottom: 0;
+      padding: 1rem;
+    }
+    .timeline-section ul li:nth-child(even) div {
+      left: -180px; 
+    }
+    .timeline-section ul li:nth-child(even) div::before {
+      right: -15px;
+    }
+    /*Third Section*/
+    .section-3{
+        background-color: #f8edeb;
+        height: 800px;
+        width: 100%;
+        margin: 0px;
+        border-radius: 5px;
+        position:relative;
+        color: #745249;
+    }
+    .cherry1_photo{
+        width: 450px;
+        top: 0px;
+        right: 0px;
+        position:absolute;
+        opacity: 0.6;
+    }
+    .tittle3{
+        font-size:39px;
+        padding: 440px 10px 0px 0px;
+    }
+    /* Tabs */
+    .tab {
+      border: 1px solid #ccc;
+      background-color: rgb(174,195,207, 0.4);
+      position: absolute;
+      left: 7px;
+      top: 512px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+    /*button*/
+    .tab button {
+      font-size: 25px;
+      width: 32vmin;
+    }
+    /*content */
+    .tabcontent{
+      left: 6.5px;
+      top: 570px;
+    }
+    .firstParagraph{
+      padding: 20px 165px 45px 50px;
+      font-size: 20px;
+    }
+    .secondParagraph{
+      padding: 20px 100px 45px 193px;
+      font-size: 20px;
+    }
+    .thirdParagraph{
+      padding: 10px 110px 10px 115px;
+      font-size: 18px;
+    }
+    /*Forth Section*/
+    .section-4{
+        height: 70vh; 
+    }
+    .tittle4{
+        font-size: 40px;
+        left: 0px;
+        padding: 90px 20px 0px 20px;
+        position: absolute;
+    }
+    .text4{
+        font-size: 23px;
+        padding: 230px 20px 0px 20px;
+        opacity: 0.5;
+        position: absolute;
+        text-align: justify;
+    }
+    /*Fifth Section*/
+    .section-5{
+        height: 16vh; 
+        color: #745249;
+        opacity: 0.7;
+    }
+    .tittle5{
+        font-size: 20px;
+        padding-top: 15px;
+        margin: 0 0 0 10px;
+        position:relative;
+    }
+    .list3 a {
+        font-size: 15px;
+        padding: 0px;
+        margin: 2px;
+    }
+    .buttonSec{
+        border-radius: 10px;
+    }
+    .list3{
+        margin-left: 60px;
+    }
+}
